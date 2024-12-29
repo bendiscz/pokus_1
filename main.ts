@@ -109,11 +109,12 @@ function eat() {
     for (let x = 0; x < 19; x++) {
         for (let y = 0; y < 14; y++) {
             let p = { x: x * step, y: y * step }
-            if (headPosition != p && bodySprites.every(e => e.x != p.x && e.y != p.y)) {
+            if (headPosition.x != p.x && headPosition.y != p.y && bodySprites.every(e => e.x != p.x || e.y != p.y)) {
                 free.push(p)
             }
         }
     }
+
     let applePosition = free[randint(0, free.length-1)]
     appleSprite.setPosition(applePosition.x, applePosition.y)
 }
