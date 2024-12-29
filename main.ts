@@ -31,16 +31,24 @@ function start() {
     game.onUpdate(update)
 
     controller.left.onEvent(ControllerButtonEvent.Pressed, function() {
-        direction = "left"
+        if (direction != "right") {
+            direction = "left"
+        }
     })
     controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-        direction = "right"
+        if (direction != "left") {
+            direction = "right"
+        }
     })
     controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-        direction = "up"
+        if (direction != "down") {
+            direction = "up"
+        }
     })
     controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-        direction = "down"
+        if (direction != "up") {
+            direction = "down"
+        }
     })
 
     controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
