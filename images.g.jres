@@ -1,0 +1,22 @@
+{
+    "image2": {
+        "data": "hwQIAAgAAAAAAAAAYGZmBmBiZgZgZiYGYGZmBmAmZgZgZmYGAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "snake_body"
+    },
+    "image1": {
+        "data": "hwQIAAgAAAAAAAAAkJmZCZB5eQmQmXkJkJl5CZB5eQmQmZkJAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "snake_head"
+    },
+    "image3": {
+        "data": "hwQIAAgAAAAAICIAICIiAiciIiJ3IiIi7i4iIi4iIiIgIiICACAiAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "apple"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
